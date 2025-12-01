@@ -7,7 +7,7 @@ Write your responses directly in this file. Follow markdown formatting guideline
 ## Section 1: Short Response
 
 ### Question 1
-This block of code throws a `SyntaxError` because the same variable is declared twice. To fix this, declare the variable ouside the **if statement** and initialize it with an empty string.
+This block of code throws a `SyntaxError` because the same variable is declared twice. To fix this, declare the variable outside the **if statement** and initialize it with an empty string.
 
 ### Question 2
 The console will return the name `'Michael Jordan'`. Objects are mutable, meaning you can add, modify or delete their properties. In this code, `bestPlayer` is set to an object. Then, a variable `theGOAT` is declared and assigned to reference the `bestPlayer` object. Lastly, the `name` property of `bestPlayer`object is reassigned `'Michael Jordan'`.
@@ -38,7 +38,7 @@ sum(100, 200, 800, 1, 1, 1); // 1103;
 As you can see, the rest parameter is represented by the `...` before `nums`, which allows the function to accept any number of arguments.
 
 ### Question 5
-**Scope** is the accesibility or visibility of a variable within different parts of a program. 
+**Scope** is the accessibility or visibility of a variable within different parts of a program. 
 
 An analogy for scope is how you speak differently depending on who you're talking to. For example, a friend versus someone older. The message you convey might change based on your evidence.
 
@@ -56,9 +56,9 @@ In the code above, there are two variables named `message`, but they exist in di
 ### Question 6
 A **module** is a file containing code that performs specific tasks and can be imported into other files to be reused. The main benefit of modules is that they help organize code across multiple files or projects, making it easier to manage and reuse.
 
-For example, imagine a bank management system that includes features like account creation, managing accounts, deposits and withdrawls. Instead of putting all this code in one file, you can split it into separate modules such as handling deposits or another for withdrawls.
+For example, imagine a bank management system that includes features like account creation, managing accounts, deposits and withdraws. Instead of putting all this code in one file, you can split it into separate modules such as handling deposits or another for withdraws.
 
-Here is an exampole of a `deposit` module:
+Here is an example of a `deposit` module:
 ```js
 // deposit.js
 const deposit = (account, amount) => {
@@ -84,9 +84,9 @@ console.log(deposit(account, 50));
 * `fruits` will contain apple, banana, cherry, and date. 
 * `fruitMinusOne` will contain apple, banana, and cherry.
 
-It is important to make a **copy** of the array to keep the function pure so the original array is not modified.
+It is important to make a **copy** of the array to keep the function pure so the original array is not modified. By having a copy, the original array can stay as it was. This helps if you want to reuse it later without worrying that the function might change it.
 
-Avoiding mutation of the input array makes sure that the original data remains unchanged and prevents unintended side effects.
+Avoiding mutation of the input array makes sure the original data remains unchanged and prevents unintended side effects. If the input were changed by accident, it could lead to incorrect or unexpected output.
 
 ### Question 8
 To represent a single item in the cart, I would use an object because each item contains information such as the **itemName**, **quantity**, and **price**.
@@ -118,4 +118,4 @@ From the example, the `shoppingCart` is an array that holds multiple items. Each
 * `quantity`: how many items there are
 * `price`: the cost per item
 
-The use of an array of object helps access indivdual items, updating quantities, and calculating the total cost of all items.
+The use of an array of object helps access individual items, updating quantities, and calculating the total cost of all items.

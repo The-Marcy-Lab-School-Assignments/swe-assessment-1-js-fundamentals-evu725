@@ -14,7 +14,7 @@
 // ============================================
 
 const petJudger = (petBreed, petName) => {
-  if (petBreed === undefined || petName === undefined) {
+  if (!petBreed || !petName) {
     console.log('Missing information. Please provide a valid pet.');
   } else if (petBreed === 'dog') {
     console.log(`I love dogs! ${petName} is so cute!`);
@@ -72,7 +72,7 @@ const letterCaseCounts = (str) => {
       count.neither += 1;
     } else if (letter === letter.toUpperCase()) {
       count.uppercase += 1;
-    } else if (letter === letter.toLowerCase()) {
+    } else {
       count.lowercase += 1;
     }
   }
